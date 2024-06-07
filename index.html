@@ -33,7 +33,24 @@
             width: 100%;
             bottom: 0;
         }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = "another-page.html";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -43,6 +60,7 @@
         <h2>这是一个简单的静态网页</h2>
         <p>这是一个示例页面，用于展示基本的HTML和CSS布局。</p>
         <p>你可以在这里添加更多内容，比如图片、链接和表格。</p>
+        <button onclick="redirectToAnotherPage()">跳转到另一页面</button>
     </main>
     <footer>
         <p>&copy; 2024 我的网页</p>
